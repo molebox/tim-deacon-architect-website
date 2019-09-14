@@ -28,6 +28,7 @@
     "gatsby-plugin-sitemap": "^2.2.12",
     "gatsby-plugin-theme-ui": "^0.2.41",
     "gatsby-source-sanity": "^5.0.2",
+    "gatsby-theme-overreacted-toggle": "^1.0.2",
     "gatsby-transformer-sharp": "^2.2.14",
     "prettier": "^1.18.2",
     "react": "^16.9.0",

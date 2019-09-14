@@ -5,15 +5,25 @@ import styled from "@emotion/styled";
 import { graphql, useStaticQuery } from "gatsby";
 
 const Container = styled.div`
+  // display: grid;
+  // grid-template-columns: 1fr;
+  // grid-template-rows: 0.5fr 1fr 0.5fr;
+  // grid-template-areas:
+  //   "logo"
+  //   "about"
+  //   "contact";
+
+  // grid-area: info;
+
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.5fr 1fr 0.5fr;
+  grid-template-rows: 1fr 0.5fr;
   grid-template-areas:
-    "logo"
     "about"
     "contact";
-
   grid-area: info;
+
+  width: 85%;
 `;
 
 const Logo = styled.div`
@@ -24,6 +34,8 @@ const Logo = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
   margin: 2em;
+
+  wifth: 100%;
 `;
 
 const About = styled.div`
@@ -33,7 +45,7 @@ const About = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  margin: 2em;
+  margin: 4em 2em;
 `;
 
 const Contact = styled.div`
@@ -59,17 +71,13 @@ const Info = () => {
   console.log({ info });
   return (
     <Container>
-      <Logo>
-        <h2>tim deacon</h2>
-        <h3>architect</h3>
-      </Logo>
       {info.map(({ node }) => (
         <>
           <About>
             <p
               sx={{
                 fontFamily: "main",
-                fontSize: [3]
+                fontSize: [2]
               }}
             >
               {node._rawAbout[1].children[0].text}
@@ -78,7 +86,7 @@ const Info = () => {
             <p
               sx={{
                 fontFamily: "main",
-                fontSize: [3]
+                fontSize: [2]
               }}
             >
               {node._rawAbout[2].children[0].text}
@@ -87,7 +95,7 @@ const Info = () => {
             <p
               sx={{
                 fontFamily: "main",
-                fontSize: [3]
+                fontSize: [2]
               }}
             >
               {node._rawAbout[3].children[0].text}
@@ -99,7 +107,7 @@ const Info = () => {
                 textDecoration: "none",
                 fontFamily: "main",
                 fontSize: [2],
-                fontWeight: "bold",
+                fontWeight: "heading",
                 color: "text"
               }}
               href={`mailto:${node.email}`}

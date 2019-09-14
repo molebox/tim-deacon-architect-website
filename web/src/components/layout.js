@@ -3,12 +3,19 @@ import styled from "@emotion/styled";
 import { Global, css } from "@emotion/core";
 
 const Container = styled.div`
+  // display: grid;
+  // grid-template-columns: 1fr 2fr;
+  // grid-template-rows: 0.5fr 1fr 1fr;
+  // grid-template-areas:
+  //   "info content"
+  //   "info content"
+  //   "info content";
+
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: 0.5fr 1fr 1fr;
+  grid-template-rows: 0.5fr 2fr;
   grid-template-areas:
-    "info content"
-    "info content"
+    "nav nav"
     "info content";
 
   height: 100vh;

@@ -20,7 +20,8 @@ export default {
     }
   },
   fonts: {
-    main: "Comfortaa"
+    main: "Comfortaa",
+    logo: "Dust-Mites"
   },
   fontWeights: {
     body: 300,
@@ -33,7 +34,14 @@ export default {
   },
   letterSpacing: {
     body: "2px",
-    text: "5px"
+    text: "5px",
+    logo: "4px"
   },
+  // breakPoints: ['40em', '52em', '64em'],
+  // mediaQueries: {
+  //   small: `@media screen and (min-width: ${breakPoints[0]})`,
+  //   medium: `@media screen and (min-width: ${breakPoints[1]})`,
+  //   large: `@media screen and (min-width: ${breakPoints[2]})`,
+  // },
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 72]
 };

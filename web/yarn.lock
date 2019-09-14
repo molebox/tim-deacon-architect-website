@@ -5408,6 +5408,14 @@ gatsby-page-utils@^0.0.17:
     micromatch "^3.1.10"
     slash "^3.0.0"
 
+gatsby-plugin-compile-es6-packages@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-compile-es6-packages/-/gatsby-plugin-compile-es6-packages-2.1.0.tgz#eb6068d8936fd8b404716e47b821d09bf0656af7"
+  integrity sha512-yrYAAjabHWJr3ARi8xzDm01dbBfyOxEWTwGkL3BMdgL/opfLvTrwLmfium4kSelnLs70DYY3rYDwyHjqyFsnFQ==
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+    regex-escape "^3.4.8"
+
 gatsby-plugin-emotion@^4.1.6:
   version "4.1.6"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-emotion/-/gatsby-plugin-emotion-4.1.6.tgz#a1a4b0d6be51448897ea3e456c23154cc50ce795"
@@ -5571,6 +5579,18 @@ gatsby-telemetry@^1.1.23:
     stack-trace "^0.0.10"
     stack-utils "1.0.2"
     uuid "3.3.3"
+
+gatsby-theme-overreacted-toggle@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/gatsby-theme-overreacted-toggle/-/gatsby-theme-overreacted-toggle-1.0.2.tgz#e2aef474034ca7629dffff8ee27d1aa521f82952"
+  integrity sha512-U54/TPTx5VtYhytl8ezs3EL4y2s19Y9E1pJC+P25GXovSyZI2TjQPr8sH1gbrF0WTzlhw98VSh+FkJRCsTmmXw==
+  dependencies:
+    "@emotion/core" "^10.0.17"
+    "@mdx-js/react" "^1.4.5"
+    gatsby-plugin-compile-es6-packages "^2.1.0"
+    gatsby-plugin-theme-ui "^0.2.41"
+    react-switch "^5.0.1"
+    theme-ui "^0.2.36"
 
 gatsby-transformer-sharp@^2.2.14, gatsby-transformer-sharp@^2.2.3:
   version "2.2.14"
@@ -10174,6 +10194,11 @@ regenerator-transform@^0.14.0:
   dependencies:
     private "^0.1.6"
 
+regex-escape@^3.4.8:
+  version "3.4.9"
+  resolved "https://registry.yarnpkg.com/regex-escape/-/regex-escape-3.4.9.tgz#407b413562e2373d56994ff213e693658ea4f8f7"
+  integrity sha512-Cv9rjwyQwVhn3L097ysanWsEElurmxDj6Cc4Ut23z7e6hzRbrNvF3Le7yAciMfuzyb0sZwSr0ZHunMNCIoy2/g==
+
 regex-not@^1.0.0, regex-not@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/regex-not/-/regex-not-1.0.2.tgz#1f4ece27e00b0b65e0247a6810e6a85d83a5752c"
@@ -11516,7 +11541,7 @@ text-table@0.2.0, text-table@^0.2.0:
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=
 
-theme-ui@^0.2.2, theme-ui@^0.2.42:
+theme-ui@^0.2.2, theme-ui@^0.2.36, theme-ui@^0.2.42:
   version "0.2.42"
   resolved "https://registry.yarnpkg.com/theme-ui/-/theme-ui-0.2.42.tgz#34bea9e2961a7d858820ed25f6baaeebac09dd91"
   integrity sha512-ChW8mGj3seiQCcb5rGNUI8TFAeh3iL1bziIuwmf5LCZ3Jpu+Hage475buoQZdO7g9sVZ/6yw3gDGxBrXkVIJyg==

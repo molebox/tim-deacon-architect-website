@@ -46,6 +46,7 @@ module.exports = {
           // token: process.env.MY_SANITY_TOKEN
         }
       },
+      'gatsby-theme-overreacted-toggle',
         'gatsby-plugin-theme-ui'
     ],
   }

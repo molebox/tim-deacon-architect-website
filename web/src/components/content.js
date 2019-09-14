@@ -1,37 +1,56 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui";
 import styled from "@emotion/styled";
+import { DarkModeToggle } from "gatsby-theme-overreacted-toggle";
+import { graphql, useStaticQuery } from "gatsby";
+import Img from "gatsby-image";
 
 const Container = styled.div`
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.5fr 2fr;
-  grid-template-areas:
-    "links"
-    "mainImage";
-
   grid-area: content;
-
-  background: hotpink;
-`;
-
-const Links = styled.div`
-  grid-area: links;
 `;
 
 const MainImage = styled.div`
-  grid-area: mainImage;
+  margin: 2em 5em;
 `;
 
-const Content = () => (
-  <Container>
-    <Links>
-      <h2>LINKS HERE</h2>
-    </Links>
-    <MainImage>
-      <h2>MAIN IMAGE HERE</h2>
-    </MainImage>
-  </Container>
-);
+const Image = styled(Img)`
+  // margin: 3em;
+  // padding: 1em;
+  border-radius: 0.4em;
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) 500ms both;
+  animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) 500ms both;
+`;
+
+const Content = () => {
+  const content = useStaticQuery(query);
+  const image = content.allSanityContent.edges;
+  return (
+    <Container>
+      <MainImage>
+        {image.map(({ node }) => (
+          <Image fluid={node.mainImage.asset.fluid} alt="" />
+        ))}
+      </MainImage>
+    </Container>
+  );
+};
 
 export default Content;
+
+export const query = graphql`
+  query MainImageQuery {
+    allSanityContent {
+      edges {
+        node {
+          mainImage {
+            asset {
+              fluid {
+                ...GatsbySanityImageFluid
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`;
