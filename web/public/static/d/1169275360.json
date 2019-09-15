@@ -1,1 +1,0 @@
-{"errors":[{"message":"Cannot query field \"_rawAbout\" on type \"SanityInfo\". Did you mean \"about\" or \"_rawSlug\"?","locations":[{"line":6,"column":9}]}]}
