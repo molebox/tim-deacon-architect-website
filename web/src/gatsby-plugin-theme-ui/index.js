@@ -35,7 +35,7 @@ export default {
   letterSpacing: {
     body: "2px",
     text: "5px",
-    logo: "4px"
+    logo: "10px"
   },
   // breakPoints: ['40em', '52em', '64em'],
   // mediaQueries: {

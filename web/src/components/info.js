@@ -21,21 +21,12 @@ const Container = styled.div`
   grid-template-areas:
     "about"
     "contact";
+
   grid-area: info;
 
-  width: 85%;
-`;
-
-const Logo = styled.div`
-  grid-area: logo;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin: 2em;
-
-  wifth: 100%;
+  @media (min-width: 48em) {
+    width: 85%;
+  }
 `;
 
 const About = styled.div`
@@ -45,7 +36,7 @@ const About = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  margin: 4em 2em;
+  margin: 5em 2em;
 `;
 
 const Contact = styled.div`

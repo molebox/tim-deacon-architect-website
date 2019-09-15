@@ -12,13 +12,25 @@ const Container = styled.div`
   //   "info content";
 
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr;
   grid-template-rows: 0.5fr 2fr;
   grid-template-areas:
-    "nav nav"
-    "info content";
+    "nav"
+    "content"
+    "info";
 
   height: 100vh;
+
+  /* 48em = 768px */
+
+  @media (min-width: 48em) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 0.5fr 2fr;
+    grid-template-areas:
+      "nav nav"
+      "info content";
+  }
 `;
 
 const Layout = ({ children }) => (
@@ -34,7 +46,7 @@ const Layout = ({ children }) => (
           scroll-behavior: smooth;
           overflow-y: scroll;
           -webkit-overflow-scrolling: touch;
-          overflow: hidden;
+          // overflow: hidden;
         }
       `}
     />

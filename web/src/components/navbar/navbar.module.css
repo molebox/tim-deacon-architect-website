@@ -10,21 +10,17 @@ a {
 /* header */
 
 .header {
-  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+  // box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
   position: relative;
   width: 100%;
   z-index: 3;
 
   grid-area: nav;
 
-  height: 10vh;
+  // height: 10vh;
+
 }
 
-.toggle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .header ul {
   margin: 0;
@@ -52,10 +48,11 @@ a {
 } */
 
 .header .logo {
-  display: block;
+  // display: block;
   float: left;
   font-size: 0.9em;
-  padding: 1.2em 1em;
+  padding-top: 1em;
+  padding-left: 1em;
   text-decoration: none;
   letter-spacing: 0.5em;
 
@@ -78,7 +75,7 @@ a {
 .header .menu_icon {
   cursor: pointer;
   display: inline-block;
-  /* float: right; */
+  float: right;
   padding: 1.5em 1.5em;
   position: relative;
   user-select: none;
@@ -151,11 +148,12 @@ a {
 
   .header .logo {
     font-size: 2em;
+    padding-left: 5em;
   }
 
   .header li {
     float: left;
-
+    padding-right: 5em;
   }
 
   .header li a {

@@ -7,7 +7,7 @@ const Logo = () => (
     sx={{
       color: "text",
       textDecoration: "none",
-      fontSize: [5],
+      fontSize: [3],
       letterSpacing: "text"
     }}
     to="/"
@@ -20,7 +20,7 @@ const Logo = () => (
         fontSize: [2]
       }}
     >
-      chartered architect
+      architect
     </h6>
   </Link>
 );
