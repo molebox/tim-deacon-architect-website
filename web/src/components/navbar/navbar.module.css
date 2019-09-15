@@ -10,20 +10,20 @@ a {
 /* header */
 
 .header {
-  // box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+  /* box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1); */
   position: relative;
   width: 100%;
   z-index: 3;
 
   grid-area: nav;
 
-  // height: 10vh;
+  /* height: 10vh; */
 
 }
 
-.toggle {
+/* .toggle {
   // padding-bottom: 1em;
-}
+} */
 
 
 .header ul {
@@ -52,7 +52,7 @@ a {
 } */
 
 .header .logo {
-  // display: block;
+  /* // display: block; */
   float: left;
   font-size: 0.9em;
   padding-top: 1em;
