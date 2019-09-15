@@ -54,14 +54,11 @@ const Navbar = () => {
             Contact
           </Link>
         </li>
-        {/* <li className="toggle">
-				<Link
-
-						to=""
-					>
-						<DarkModeToggle/>
-					</Link>
-				</li> */}
+        <li className={styles.toggle}>
+          <Link to="">
+            <DarkModeToggle />
+          </Link>
+        </li>
       </ul>
     </header>
   );

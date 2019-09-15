@@ -17,7 +17,6 @@
     "@emotion/styled": "^10.0.17",
     "@horacioh/gatsby-theme-instagram": "^0.1.6",
     "@mdx-js/react": "^1.4.5",
-    "@sanity/block-content-to-react": "^2.0.6",
     "gatsby": "^2.15.15",
     "gatsby-image": "^2.2.19",
     "gatsby-plugin-emotion": "^4.1.6",
@@ -34,7 +33,6 @@
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-helmet": "^5.2.1",
-    "react-responsive-navbar": "^1.0.11",
     "react-switch": "^5.0.1",
     "theme-ui": "^0.2.42"
   }

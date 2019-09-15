@@ -5,16 +5,6 @@ import styled from "@emotion/styled";
 import { graphql, useStaticQuery } from "gatsby";
 
 const Container = styled.div`
-  // display: grid;
-  // grid-template-columns: 1fr;
-  // grid-template-rows: 0.5fr 1fr 0.5fr;
-  // grid-template-areas:
-  //   "logo"
-  //   "about"
-  //   "contact";
-
-  // grid-area: info;
-
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 0.5fr;

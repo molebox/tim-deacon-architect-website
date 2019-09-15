@@ -1,7 +1,6 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui";
 import styled from "@emotion/styled";
-import { DarkModeToggle } from "gatsby-theme-overreacted-toggle";
 import { graphql, useStaticQuery } from "gatsby";
 import Img from "gatsby-image";
 
