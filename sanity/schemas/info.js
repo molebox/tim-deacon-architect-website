@@ -31,6 +31,42 @@ export default {
         type: 'string',
         description: 'Your contact email'
       },
+      {
+        name: 'arbWhite',
+        title: 'ARB logo white',
+        type: 'image',
+        description: 'Upload the white arb logo',
+        options: {
+          hotspot: true
+        }
+      },
+      {
+        name: 'arbBlack',
+        title: 'ARB logo black',
+        type: 'image',
+        description: 'Upload the black arb logo',
+        options: {
+          hotspot: true
+        }
+      },
+      {
+        name: 'ribaWhite',
+        title: 'RIBA logo white',
+        type: 'image',
+        description: 'Upload the white RIBA logo',
+        options: {
+          hotspot: true
+        }
+      },
+      {
+        name: 'ribaBlack',
+        title: 'RIBA logo black',
+        type: 'image',
+        description: 'Upload the black RIBA logo',
+        options: {
+          hotspot: true
+        }
+      }
     ],
   }
   

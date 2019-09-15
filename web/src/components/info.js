@@ -3,6 +3,7 @@ import { jsx } from "theme-ui";
 import React from "react";
 import styled from "@emotion/styled";
 import { graphql, useStaticQuery } from "gatsby";
+import Img from "gatsby-image";
 
 const Container = styled.div`
   display: grid;
@@ -49,7 +50,6 @@ const ArchitectLogos = styled.div`
 const Info = () => {
   const homeInfo = useStaticQuery(query);
   const info = homeInfo.allSanityInfo.edges;
-  console.log({ info });
   return (
     <Container>
       {info.map(({ node }) => (
@@ -96,8 +96,8 @@ const Info = () => {
               e: {node.email}
             </a>
             <ArchitectLogos>
-              <h4>LOGO 1</h4>
-              <h4>LOGO 2</h4>
+            <Img fluid={node.arbWhite.asset.fluid} alt="" />
+            <Img fluid={node.ribaWhite.asset.fluid} alt="" />
             </ArchitectLogos>
           </Contact>
         </>
@@ -109,19 +109,48 @@ const Info = () => {
 export default Info;
 
 export const query = graphql`
-  query InfoQuery {
-    allSanityInfo {
-      edges {
-        node {
-          _id
-          _rawAbout(resolveReferences: { maxDepth: 10 })
-          email
-          title
-          slug {
-            current
+query InfoQuery {
+  allSanityInfo {
+    edges {
+      node {
+        _id
+        _rawAbout(resolveReferences: {maxDepth: 10})
+        email
+        title
+        slug {
+          current
+        }
+        arbBlack {
+          asset {
+            fluid {
+              ...GatsbySanityImageFluid
+            }
+          }
+        }
+        arbWhite {
+          asset {
+            fluid {
+              ...GatsbySanityImageFluid
+            }
+          }
+        }
+        ribaBlack {
+          asset {
+            fluid {
+              ...GatsbySanityImageFluid
+            }
+          }
+        }
+        ribaWhite {
+          asset {
+            fluid {
+              ...GatsbySanityImageFluid
+            }
           }
         }
       }
     }
   }
+}
+
 `;

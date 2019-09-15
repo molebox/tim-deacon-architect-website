@@ -13,11 +13,11 @@ const Navbar = () => {
       }}
       className={styles.header}
     >
-      <a href="" className={styles.logo}>
+      <div className={styles.logo}>
         <Logo />
-      </a>
+      </div>
       <input className={styles.menu_btn} type="checkbox" id="menu-btn" />
-      <label className={styles.menu_icon} for="menu-btn">
+      <label className={styles.menu_icon} htmlFor="menu-btn">
         <span className={styles.navicon}></span>
       </label>
       <ul
