@@ -35,9 +35,9 @@ const Navbar = () => {
               fontSize: [2],
               fontWeight: "bold"
             }}
-            to="/instagram"
+            to="/"
           >
-            Instagram
+            Home
           </Link>
         </li>
         <li>
@@ -49,9 +49,9 @@ const Navbar = () => {
               fontSize: [2],
               fontWeight: "bold"
             }}
-            to="/contact"
+            to="/instagram"
           >
-            Contact
+            Instagram
           </Link>
         </li>
         <li className={styles.toggle}>

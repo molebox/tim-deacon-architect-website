@@ -7,7 +7,7 @@ const Logo = () => (
     sx={{
       color: "text",
       textDecoration: "none",
-      fontSize: [3],
+      fontSize: [4],
       letterSpacing: "text"
     }}
     to="/"
@@ -17,7 +17,7 @@ const Logo = () => (
       sx={{
         fontFamily: "main",
         letterSpacing: "logo",
-        fontSize: [2]
+        fontSize: [3]
       }}
     >
       architect

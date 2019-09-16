@@ -32,7 +32,7 @@ module.exports = {
       {
         resolve: "@horacioh/gatsby-theme-instagram",
         options: {
-          username: "mikeroseillustrations", 
+          username: "butteronmyhat", 
         },
       },
       {

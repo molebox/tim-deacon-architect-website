@@ -40,6 +40,7 @@ a {
   align-items: center;
   margin: 0.5em 0;
   text-decoration: none;
+  cursor: pointer;
 
   -webkit-animation: fade-in 1.3s cubic-bezier(0.39, 0.575, 0.565, 1) 500ms both;
   animation: fade-in 1.3s cubic-bezier(0.39, 0.575, 0.565, 1) 500ms both;
@@ -59,6 +60,8 @@ a {
   padding-left: 1em;
   text-decoration: none;
   letter-spacing: 0.5em;
+  cursor: pointer;
+
 
   font-family: "Dust-Mites";
 

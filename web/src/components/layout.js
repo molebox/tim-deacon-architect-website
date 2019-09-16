@@ -47,6 +47,8 @@ const Layout = ({ children }) => (
           overflow-y: scroll;
           -webkit-overflow-scrolling: touch;
           // overflow: hidden;
+          max-width: 100%;
+          overflow-x: hidden;
         }
       `}
     />
