@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui";
+import { jsx, useColorMode } from "theme-ui";
 import React from "react";
 import styled from "@emotion/styled";
 import { graphql, useStaticQuery } from "gatsby";
@@ -8,10 +8,11 @@ import Img from "gatsby-image";
 const Container = styled.div`
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 0.5fr;
+  grid-template-rows: 1fr 0.2fr 0.2fr;
   grid-template-areas:
     "about"
-    "contact";
+    "contact"
+    "logos";
 
   grid-area: info;
 
@@ -41,13 +42,25 @@ const Contact = styled.div`
 `;
 
 const ArchitectLogos = styled.div`
+  grid-area: logos;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
-  align-items: flex-start;
-  margin-top: 2em;
+  align-items: flex-end;
+  margin: 2em;
+`;
+
+const ARBLogo = styled(Img)`
+  width: 15em;
+  margin-right: 2em;
+`;
+
+const RIBALogo = styled(Img)`
+  width: 15em;
 `;
 
 const Info = () => {
+  const [colorMode] = useColorMode();
   const homeInfo = useStaticQuery(query);
   const info = homeInfo.allSanityInfo.edges;
   return (
@@ -95,11 +108,20 @@ const Info = () => {
             >
               e: {node.email}
             </a>
-            <ArchitectLogos>
-            <Img fluid={node.arbWhite.asset.fluid} alt="" />
-            <Img fluid={node.ribaWhite.asset.fluid} alt="" />
-            </ArchitectLogos>
           </Contact>
+          <ArchitectLogos>
+            {colorMode === "light" ? (
+              <>
+                <ARBLogo fluid={node.arbWhite.asset.fluid} alt="" />
+                <RIBALogo fluid={node.ribaWhite.asset.fluid} alt="" />
+              </>
+            ) : (
+              <>
+                <ARBLogo fluid={node.arbBlack.asset.fluid} alt="" />
+                <RIBALogo fluid={node.ribaBlack.asset.fluid} alt="" />
+              </>
+            )}
+          </ArchitectLogos>
         </>
       ))}
     </Container>
@@ -109,48 +131,47 @@ const Info = () => {
 export default Info;
 
 export const query = graphql`
-query InfoQuery {
-  allSanityInfo {
-    edges {
-      node {
-        _id
-        _rawAbout(resolveReferences: {maxDepth: 10})
-        email
-        title
-        slug {
-          current
-        }
-        arbBlack {
-          asset {
-            fluid {
-              ...GatsbySanityImageFluid
+  query InfoQuery {
+    allSanityInfo {
+      edges {
+        node {
+          _id
+          _rawAbout(resolveReferences: { maxDepth: 10 })
+          email
+          title
+          slug {
+            current
+          }
+          arbBlack {
+            asset {
+              fluid {
+                ...GatsbySanityImageFluid
+              }
             }
           }
-        }
-        arbWhite {
-          asset {
-            fluid {
-              ...GatsbySanityImageFluid
+          arbWhite {
+            asset {
+              fluid {
+                ...GatsbySanityImageFluid
+              }
             }
           }
-        }
-        ribaBlack {
-          asset {
-            fluid {
-              ...GatsbySanityImageFluid
+          ribaBlack {
+            asset {
+              fluid {
+                ...GatsbySanityImageFluid
+              }
             }
           }
-        }
-        ribaWhite {
-          asset {
-            fluid {
-              ...GatsbySanityImageFluid
+          ribaWhite {
+            asset {
+              fluid {
+                ...GatsbySanityImageFluid
+              }
             }
           }
         }
       }
     }
   }
-}
-
 `;
