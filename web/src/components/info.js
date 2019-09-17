@@ -39,6 +39,30 @@ const Contact = styled.div`
   justify-content: flex-start;
 
   margin: 2em;
+
+  & a::after {
+    content: "";
+    display: block;
+    width: 10%;
+    padding-top: 1em;
+    border-bottom: 2px solid black;
+    transition: 0.5s;
+    position: absolute;
+    z-index: 10;
+  }
+
+  & a:hover::after {
+    width: 15%;
+    position: absolute;
+  }
+
+  @media (min-width: 48em) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    margin: 2em;
+  }
 `;
 
 const ArchitectLogos = styled.div`
