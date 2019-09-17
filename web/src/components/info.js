@@ -40,7 +40,7 @@ const Contact = styled.div`
 
   margin: 2em;
 
-  & a::after {
+  & > a::after {
     content: "";
     display: block;
     width: 10%;
@@ -51,7 +51,7 @@ const Contact = styled.div`
     z-index: 10;
   }
 
-  & a:hover::after {
+  & > a:hover::after {
     width: 15%;
     position: absolute;
   }

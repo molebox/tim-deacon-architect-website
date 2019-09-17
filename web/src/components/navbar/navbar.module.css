@@ -21,6 +21,11 @@ a {
 
 }
 
+.toggle {
+  display: flex;
+  justify-content: center;
+}
+
 
 .header ul {
   margin: 0;

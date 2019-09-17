@@ -20,6 +20,7 @@ const Container = styled.div`
     "info";
 
   height: 100vh;
+  width: 100vw;
 
   /* 48em = 768px */
 
