@@ -156,7 +156,7 @@ a {
   .header .logo {
     font-size: 2em;
     padding-left: 5em;
-    margin-bottom: auto;
+    margin-bottom: 1em;
   }
 
   .header li {
