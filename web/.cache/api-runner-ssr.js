@@ -1,14 +1,14 @@
 var plugins = [{
-      plugin: require('D:/HUNGRYBEARSTUDIO/WORK/tim-deacon-architect-website/web/node_modules/gatsby-plugin-sitemap/gatsby-ssr'),
+      plugin: require('D:/HUNGRY BEAR STUDIO/WORK/tim-deacon-architect-website/web/node_modules/gatsby-plugin-sitemap/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('D:/HUNGRYBEARSTUDIO/WORK/tim-deacon-architect-website/web/node_modules/gatsby-plugin-google-fonts/gatsby-ssr'),
+      plugin: require('D:/HUNGRY BEAR STUDIO/WORK/tim-deacon-architect-website/web/node_modules/gatsby-plugin-google-fonts/gatsby-ssr'),
       options: {"plugins":[],"fonts":["Comfortaa","Open Sans","source sans pro:300,400,400i,700"]},
     },{
-      plugin: require('D:/HUNGRYBEARSTUDIO/WORK/tim-deacon-architect-website/web/node_modules/gatsby-plugin-theme-ui/gatsby-ssr'),
+      plugin: require('D:/HUNGRY BEAR STUDIO/WORK/tim-deacon-architect-website/web/node_modules/gatsby-plugin-theme-ui/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('D:/HUNGRYBEARSTUDIO/WORK/tim-deacon-architect-website/web/node_modules/gatsby-source-sanity/gatsby-ssr'),
+      plugin: require('D:/HUNGRY BEAR STUDIO/WORK/tim-deacon-architect-website/web/node_modules/gatsby-source-sanity/gatsby-ssr'),
       options: {"plugins":[],"projectId":"vfkh3okp","dataset":"backend","watchMode":true},
     }]
 // During bootstrap, we write requires at top of this file which looks like:

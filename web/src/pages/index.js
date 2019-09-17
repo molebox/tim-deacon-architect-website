@@ -13,6 +13,7 @@ const ImageContainer = styled.div`
 
   @media (min-width: 48em) {
     margin: 2em 5em;
+    width: 80%;
   }
 `;
 
