@@ -14,6 +14,8 @@ const Container = styled.div`
   height: 100vh;
   width: 100vw;
 
+  background-color: black;
+
   /* 48em = 768px */
 
   @media (min-width: 48em) {
@@ -41,7 +43,7 @@ const Layout = ({ children }) => (
           -webkit-overflow-scrolling: touch;
           // overflow: hidden;
           // width: 100%;
-          // overflow-x: hidden;
+          overflow-x: hidden;
         }
       `}
     />

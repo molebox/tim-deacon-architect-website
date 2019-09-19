@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui";
-import { Grid, SimpleCard } from "@horacioh/gatsby-theme-instagram";
+import { Grid, ComplexCard } from "@horacioh/gatsby-theme-instagram";
 import Layout from "./../components/layout";
 import Navbar from "./../components/navbar/navbar";
 import Info from "./../components/info";
@@ -35,7 +35,7 @@ const Instagram = () => (
     <Info />
     <Content>
       <InstaContainer>
-        <Grid card={SimpleCard} />
+        <Grid card={ComplexCard} />
       </InstaContainer>
     </Content>
   </Layout>

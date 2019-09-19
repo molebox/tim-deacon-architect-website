@@ -32,6 +32,15 @@ export default {
         description: 'Your contact email'
       },
       {
+        name: 'logo',
+        title: 'Logo',
+        type: 'image',
+        description: 'Upload your logo',
+        options: {
+          hotspot: true
+        }
+      },
+      {
         name: 'arbWhite',
         title: 'ARB logo white',
         type: 'image',

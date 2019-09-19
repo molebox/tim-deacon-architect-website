@@ -19,7 +19,7 @@ const ImageContainer = styled.div`
 `;
 
 const Image = styled(Img)`
-  border-radius: 0.4em;
+  // border-radius: 0.4em;
   -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) 500ms both;
   animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) 500ms both;
 

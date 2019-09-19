@@ -51,7 +51,7 @@ const Contact = styled.div`
     display: block;
     width: 10%;
     padding-top: 1em;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid white;
     transition: 0.5s;
     position: absolute;
     z-index: 10;
@@ -85,7 +85,7 @@ const ARBLogo = styled(Img)`
   margin-right: 2em;
 
   @media (min-width: 48em) {
-    width: 15em;
+    width: 9em;
     margin-right: 2em;
   }
 `;
@@ -94,7 +94,7 @@ const RIBALogo = styled(Img)`
   width: 7em;
 
   @media (min-width: 48em) {
-    width: 15em;
+    width: 9em;
     margin-right: 2em;
   }
 `;

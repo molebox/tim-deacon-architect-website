@@ -10,7 +10,7 @@ a {
 /* header */
 
 .header {
-  box-shadow: 1px 5px 10px 0 rgba(0, 0, 0, .1);
+  /* box-shadow: 1px 5px 10px 0 rgba(0, 0, 0, .1); */
   position: relative;
   width: 100%;
   z-index: 3;
@@ -39,9 +39,10 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0.5em 0;
+  margin: 1em 0;
   text-decoration: none;
   cursor: pointer;
+  font-size: .8em;
 
   -webkit-animation: fade-in 1.3s cubic-bezier(0.39, 0.575, 0.565, 1) 500ms both;
   animation: fade-in 1.3s cubic-bezier(0.39, 0.575, 0.565, 1) 500ms both;
@@ -90,7 +91,7 @@ a {
 }
 
 .header .menu_icon .navicon {
-  background: #333;
+  background: white;
   display: block;
   height: 2px;
   position: relative;
@@ -100,7 +101,7 @@ a {
 
 .header .menu_icon .navicon:before,
 .header .menu_icon .navicon:after {
-  background: #333;
+  background: white;
   content: '';
   display: block;
   height: 100%;
@@ -148,9 +149,9 @@ a {
 
 @media (min-width: 48em) {
 
-  .toggle {
+  /* .toggle {
     margin-top: 1.5em;
-  }
+  } */
 
   .header {
     display: flex;
@@ -159,9 +160,9 @@ a {
   }
 
   .header .logo {
-    font-size: 2em;
-    padding-left: 5em;
-    margin-bottom: 1em;
+    font-size: 1.7em;
+    /* padding-left: 5em;
+    margin-bottom: 1em; */
   }
 
   .header li {
@@ -171,6 +172,7 @@ a {
 
   .header li a {
     padding: 1.5em;
+    font-size: 1em;
   }
 
   .header li a::after {
@@ -178,7 +180,7 @@ a {
     display: block;
     width: 2%;
     padding-top: 2em;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid white;
     transition: .5s;
     position: absolute;
     z-index: 10;

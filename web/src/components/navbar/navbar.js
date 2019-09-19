@@ -54,9 +54,9 @@ const Navbar = () => {
             Instagram
           </Link>
         </li>
-        <li className={styles.toggle}>
+        {/* <li className={styles.toggle}>
           <DarkModeToggle />
-        </li>
+        </li> */}
       </ul>
     </header>
   );
