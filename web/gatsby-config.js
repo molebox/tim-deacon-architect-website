@@ -70,7 +70,7 @@ module.exports = {
           background_color: `#000`,
           theme_color: `#000`,
           display: `standalone`,
-          icon: 'src/assets/deacs-favicon.ico'
+          icon: 'src/assets/deacs-favicon.png'
         },
       },
     ],
