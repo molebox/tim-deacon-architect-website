@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, useColorMode } from "theme-ui";
+import { jsx } from "theme-ui";
 import React from "react";
 import styled from "@emotion/styled";
 import { graphql, useStaticQuery } from "gatsby";
@@ -17,6 +17,7 @@ const Container = styled.div`
 
   grid-area: info;
   width: 100vw;
+  background-color: black;
 
   @media (min-width: 48em) {
     width: 85%;
@@ -100,7 +101,7 @@ const RIBALogo = styled(Img)`
 `;
 
 const Info = () => {
-  const [colorMode] = useColorMode();
+  // const [colorMode] = useColorMode();
   const homeInfo = useStaticQuery(query);
   const info = homeInfo.allSanityInfo.edges;
   return (
