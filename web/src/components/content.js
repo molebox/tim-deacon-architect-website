@@ -4,6 +4,7 @@ import styled from "@emotion/styled";
 
 const Container = styled.div`
   grid-area: content;
+  background-color: black;
 `;
 
 const Content = ({ children }) => {
