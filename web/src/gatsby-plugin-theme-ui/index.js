@@ -10,7 +10,7 @@ export default {
     text: "#fff",
     // text: "#000",
     lightText: "#808080",
-    background: "#fff",
+    background: "#000",
 
     modes: {
       // thsi is the dark color mode colors
