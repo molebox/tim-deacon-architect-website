@@ -112,7 +112,8 @@ const Info = () => {
             <p
               sx={{
                 fontFamily: "main",
-                fontSize: [2]
+                fontSize: [2],
+                color: "text"
               }}
             >
               {node._rawAbout[1].children[0].text}
@@ -121,7 +122,8 @@ const Info = () => {
             <p
               sx={{
                 fontFamily: "main",
-                fontSize: [2]
+                fontSize: [2],
+                color: "text"
               }}
             >
               {node._rawAbout[2].children[0].text}
@@ -130,7 +132,8 @@ const Info = () => {
             <p
               sx={{
                 fontFamily: "main",
-                fontSize: [2]
+                fontSize: [2],
+                color: "text"
               }}
             >
               {node._rawAbout[3].children[0].text}
@@ -151,7 +154,9 @@ const Info = () => {
             </a>
           </Contact>
           <ArchitectLogos>
-            {colorMode === "light" ? (
+            <ARBLogo fluid={node.arbBlack.asset.fluid} alt="" />
+            <RIBALogo fluid={node.ribaBlack.asset.fluid} alt="" />
+            {/* {colorMode === "light" ? (
               <>
                 <ARBLogo fluid={node.arbWhite.asset.fluid} alt="" />
                 <RIBALogo fluid={node.ribaWhite.asset.fluid} alt="" />
@@ -161,7 +166,7 @@ const Info = () => {
                 <ARBLogo fluid={node.arbBlack.asset.fluid} alt="" />
                 <RIBALogo fluid={node.ribaBlack.asset.fluid} alt="" />
               </>
-            )}
+            )} */}
           </ArchitectLogos>
         </>
       ))}

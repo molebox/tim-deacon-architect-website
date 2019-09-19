@@ -1,13 +1,14 @@
 export default {
   // this enables the color modes feature
   // and is used as the name for the top-level colors object
-  initialColorMode: "light",
+  // initialColorMode: "light",
   // optionally enable custom properties
   // to help avoid a flash of colors on page load
   useCustomProperties: true,
   colors: {
     // these are the default light colors
-    text: "#000",
+    text: "#fff",
+    // text: "#000",
     lightText: "#808080",
     background: "#fff",
 

@@ -52,14 +52,26 @@ module.exports = {
             title: 'tim deacon architect',
             description: 'Professional architectural services, tailored to suit your aspirations.',
             author: 'Tim Deacon',
-            siteUrl: 'https://www.timdeaconarchitect.com',
+            siteUrl: 'https://timdeaconarchitect.com',
             social: {
                 twitter: ''
             }
         }
     },
-    'gatsby-plugin-typescript',
+      'gatsby-plugin-typescript',
       'gatsby-theme-overreacted-toggle',
-        'gatsby-plugin-theme-ui'
+      'gatsby-plugin-theme-ui',
+      {
+        resolve: `gatsby-plugin-manifest`,
+        options: {
+          name: `Tim Deacon Architect`,
+          short_name: `Tim Deacon Architect`,
+          start_url: `/`,
+          background_color: `#000`,
+          theme_color: `#000`,
+          display: `standalone`,
+          icon: 'src/assets/deacs-favicon.ico'
+        },
+      },
     ],
   }

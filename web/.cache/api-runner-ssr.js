@@ -13,6 +13,9 @@ var plugins = [{
     },{
       plugin: require('D:/HUNGRY BEAR STUDIO/WORK/tim-deacon-architect-website/web/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
+    },{
+      plugin: require('D:/HUNGRY BEAR STUDIO/WORK/tim-deacon-architect-website/web/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
+      options: {"plugins":[],"name":"Tim Deacon Architect","short_name":"Tim Deacon Architect","start_url":"/","background_color":"#000","theme_color":"#000","display":"standalone","icon":"src/assets/deacs-favicon.ico"},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [
