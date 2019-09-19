@@ -11,7 +11,6 @@ import SEO from "gatsby-theme-seo/src/components/seo";
 
 const ImageContainer = styled.div`
   margin: 2em 1em;
-  border: blue solid 1px;
 
   @media (min-width: 48em) {
     margin: 2em 5em;
