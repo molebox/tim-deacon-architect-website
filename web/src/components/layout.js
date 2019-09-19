@@ -3,14 +3,6 @@ import styled from "@emotion/styled";
 import { Global, css } from "@emotion/core";
 
 const Container = styled.div`
-  // display: grid;
-  // grid-template-columns: 1fr 2fr;
-  // grid-template-rows: 0.5fr 1fr 1fr;
-  // grid-template-areas:
-  //   "info content"
-  //   "info content"
-  //   "info content";
-
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 0.5fr 2fr;
@@ -48,8 +40,8 @@ const Layout = ({ children }) => (
           overflow-y: scroll;
           -webkit-overflow-scrolling: touch;
           // overflow: hidden;
-          width: 100%;
-          overflow-x: hidden;
+          // width: 100%;
+          // overflow-x: hidden;
         }
       `}
     />

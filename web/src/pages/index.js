@@ -7,9 +7,11 @@ import Navbar from "../components/navbar/navbar";
 import styled from "@emotion/styled";
 import Img from "gatsby-image";
 import { graphql, useStaticQuery } from "gatsby";
+import SEO from "gatsby-theme-seo/src/components/seo";
 
 const ImageContainer = styled.div`
   margin: 2em 1em;
+  border: blue solid 1px;
 
   @media (min-width: 48em) {
     margin: 2em 5em;
@@ -26,12 +28,18 @@ const Image = styled(Img)`
   -moz-box-shadow: 4px 7px 16px -5px rgba(0, 0, 0, 0.75);
   box-shadow: 4px 7px 16px -5px rgba(0, 0, 0, 0.75);
 `;
+const keywords = ["architect", "chartered architect", "consultation"];
 
 const Index = () => {
   const content = useStaticQuery(query);
   const image = content.allSanityContent.edges;
   return (
     <Layout>
+      <SEO
+        title="Tim Deacon Architect"
+        description="Professional architectural services, tailored to suit your aspirations."
+        keywords={keywords}
+      />
       <Navbar />
       <Info />
       <Content>

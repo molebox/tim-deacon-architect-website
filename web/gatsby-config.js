@@ -32,7 +32,7 @@ module.exports = {
       {
         resolve: "@horacioh/gatsby-theme-instagram",
         options: {
-          username: "butteronmyhat", 
+          username: "timdeaconarchitect", 
         },
       },
       {
@@ -46,6 +46,19 @@ module.exports = {
           // token: process.env.MY_SANITY_TOKEN
         }
       },
+      {
+        resolve: 'gatsby-theme-seo', 
+        options: {
+            title: 'tim deacon architect',
+            description: 'Professional architectural services, tailored to suit your aspirations.',
+            author: 'Tim Deacon',
+            siteUrl: 'https://www.timdeaconarchitect.com',
+            social: {
+                twitter: ''
+            }
+        }
+    },
+    'gatsby-plugin-typescript',
       'gatsby-theme-overreacted-toggle',
         'gatsby-plugin-theme-ui'
     ],

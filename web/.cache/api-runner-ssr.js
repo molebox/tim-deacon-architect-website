@@ -10,6 +10,9 @@ var plugins = [{
     },{
       plugin: require('D:/HUNGRY BEAR STUDIO/WORK/tim-deacon-architect-website/web/node_modules/gatsby-source-sanity/gatsby-ssr'),
       options: {"plugins":[],"projectId":"vfkh3okp","dataset":"backend","watchMode":true},
+    },{
+      plugin: require('D:/HUNGRY BEAR STUDIO/WORK/tim-deacon-architect-website/web/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      options: {"plugins":[]},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [

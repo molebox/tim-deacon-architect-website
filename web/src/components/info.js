@@ -4,6 +4,7 @@ import React from "react";
 import styled from "@emotion/styled";
 import { graphql, useStaticQuery } from "gatsby";
 import Img from "gatsby-image";
+import SEO from "gatsby-theme-seo/src/components/seo";
 
 const Container = styled.div`
   display: grid;
@@ -15,6 +16,7 @@ const Container = styled.div`
     "logos";
 
   grid-area: info;
+  width: 100vw;
 
   @media (min-width: 48em) {
     width: 85%;
@@ -28,7 +30,11 @@ const About = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  margin: 5em 2em;
+  margin: 1em 2em;
+
+  @media (min-width: 48em) {
+    margin: 5em 2em;
+  }
 `;
 
 const Contact = styled.div`
@@ -75,12 +81,22 @@ const ArchitectLogos = styled.div`
 `;
 
 const ARBLogo = styled(Img)`
-  width: 15em;
+  width: 7em;
   margin-right: 2em;
+
+  @media (min-width: 48em) {
+    width: 15em;
+    margin-right: 2em;
+  }
 `;
 
 const RIBALogo = styled(Img)`
-  width: 15em;
+  width: 7em;
+
+  @media (min-width: 48em) {
+    width: 15em;
+    margin-right: 2em;
+  }
 `;
 
 const Info = () => {
@@ -89,6 +105,7 @@ const Info = () => {
   const info = homeInfo.allSanityInfo.edges;
   return (
     <Container>
+      <SEO title="Tim Deacon Architect" />
       {info.map(({ node }) => (
         <>
           <About>

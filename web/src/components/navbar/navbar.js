@@ -55,7 +55,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li className={styles.toggle}>
-            <DarkModeToggle />
+          <DarkModeToggle />
         </li>
       </ul>
     </header>
