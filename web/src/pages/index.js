@@ -35,7 +35,7 @@ const Index = () => {
   return (
     <Layout>
       <SEO
-        title="Tim Deacon Architect"
+        title="Chartered Architect"
         description="Professional architectural services, tailored to suit your aspirations."
         keywords={keywords}
       />
