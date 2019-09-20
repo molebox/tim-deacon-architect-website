@@ -5,7 +5,6 @@ import useGridQuery from "../hooks/useGridQuery";
 
 function InstagramGrid({ card = SimpleCard }) {
   const data = useGridQuery();
-  console.log(data);
   const Child = card;
   return (
     data.allInstaNode.edges && (
@@ -13,11 +12,10 @@ function InstagramGrid({ card = SimpleCard }) {
         sx={{
           display: "flex",
           flexWrap: "wrap",
-          mx: -2
+          mx: -5
         }}
       >
         {data.allInstaNode.edges.map(({ node }) => {
-          console.log(node);
           return <Child key={node.id} {...node} />;
         })}
       </div>

@@ -8,7 +8,7 @@ require("dotenv").config({
 module.exports = {
     siteMetadata: {
         title: 'Tim Deacon Architect',
-        description: 'Official site of Tim Deacon Architect',
+        description: 'Tim Deacon Architect Chartered Architect',
         siteUrl: 'https://www.test.com',
         instagram: '',
         keywords: [
@@ -64,8 +64,8 @@ module.exports = {
       {
         resolve: `gatsby-plugin-manifest`,
         options: {
-          name: `Tim Deacon Architect`,
-          short_name: `Chartered Architect`,
+          name: `Tim Deacon Architect Chartered Architect`,
+          short_name: `Tim Deacon Architect`,
           start_url: `/`,
           background_color: `#000`,
           theme_color: `#000`,

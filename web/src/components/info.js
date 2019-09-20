@@ -44,13 +44,14 @@ const Contact = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  background-color: black;
 
   margin: 2em;
 
   & > a::after {
     content: "";
     display: block;
-    width: 10%;
+    width: 15%;
     padding-top: 1em;
     border-bottom: 2px solid white;
     transition: 0.5s;
@@ -59,7 +60,7 @@ const Contact = styled.div`
   }
 
   & > a:hover::after {
-    width: 15%;
+    width: 20%;
     position: absolute;
   }
 
@@ -101,7 +102,6 @@ const RIBALogo = styled(Img)`
 `;
 
 const Info = () => {
-  // const [colorMode] = useColorMode();
   const homeInfo = useStaticQuery(query);
   const info = homeInfo.allSanityInfo.edges;
   return (

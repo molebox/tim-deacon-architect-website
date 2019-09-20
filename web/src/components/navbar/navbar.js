@@ -2,7 +2,6 @@
 import { jsx } from "theme-ui";
 import styles from "./navbar.module.css";
 import { Link } from "gatsby";
-import { DarkModeToggle } from "gatsby-theme-overreacted-toggle";
 import Logo from "../logo";
 
 const Navbar = () => {

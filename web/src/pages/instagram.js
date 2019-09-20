@@ -1,12 +1,13 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui";
-import { Grid, ComplexCard } from "@horacioh/gatsby-theme-instagram";
 import Layout from "./../components/layout";
 import Navbar from "./../components/navbar/navbar";
 import Info from "./../components/info";
 import Content from "./../components/content";
 import styled from "@emotion/styled";
 import SEO from "gatsby-theme-seo/src/components/seo";
+import SimpleCard from "./../@horacioh/gatsby-theme-instagram/src/components/SimpleCard";
+import Grid from "./../@horacioh/gatsby-theme-instagram/src/components/Grid";
 
 const InstaContainer = styled.div`
   margin: 2em;
@@ -35,7 +36,7 @@ const Instagram = () => (
     <Info />
     <Content>
       <InstaContainer>
-        <Grid card={ComplexCard} />
+        <Grid card={SimpleCard} />
       </InstaContainer>
     </Content>
   </Layout>

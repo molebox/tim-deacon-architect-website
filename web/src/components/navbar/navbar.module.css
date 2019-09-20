@@ -160,9 +160,11 @@ a {
   }
 
   .header .logo {
-    font-size: 1.7em;
-    /* padding-left: 5em;
-    margin-bottom: 1em; */
+    font-size: 1.8em;
+  }
+
+  .header ul {
+    margin-right: 5em;
   }
 
   .header li {
@@ -172,7 +174,7 @@ a {
 
   .header li a {
     padding: 1.5em;
-    font-size: 1em;
+    font-size: 0.9em;
   }
 
   .header li a::after {
