@@ -65,7 +65,7 @@ module.exports = {
         resolve: `gatsby-plugin-manifest`,
         options: {
           name: `Tim Deacon Architect`,
-          short_name: `Tim Deacon Architect`,
+          short_name: `Chartered Architect`,
           start_url: `/`,
           background_color: `#000`,
           theme_color: `#000`,
@@ -73,5 +73,6 @@ module.exports = {
           icon: 'src/assets/deacs-favicon.png'
         },
       },
+      'gatsby-plugin-offline'
     ],
   }
