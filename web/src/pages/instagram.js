@@ -10,7 +10,7 @@ import SimpleCard from "./../@horacioh/gatsby-theme-instagram/src/components/Sim
 import Grid from "./../@horacioh/gatsby-theme-instagram/src/components/Grid";
 
 const InstaContainer = styled.div`
-  margin: 2em;
+  margin: 5em;
 
   @media (min-width: 48em) {
     padding: 2em;

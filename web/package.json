@@ -33,6 +33,7 @@
     "gatsby-theme-overreacted-toggle": "^1.0.2",
     "gatsby-theme-seo": "^0.0.1",
     "gatsby-transformer-sharp": "^2.2.14",
+    "lodash.flattendeep": "^4.4.0",
     "prettier": "^1.18.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
