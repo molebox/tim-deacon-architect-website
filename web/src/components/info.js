@@ -35,6 +35,10 @@ const About = styled.div`
 
   @media (min-width: 48em) {
     margin: 5em 2em;
+
+    & p {
+      padding: 1em 0 0 0;
+    }
   }
 `;
 

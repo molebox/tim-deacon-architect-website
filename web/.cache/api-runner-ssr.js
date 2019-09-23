@@ -1,23 +1,23 @@
 var plugins = [{
-      plugin: require('D:/HUNGRYBEARSTUDIO/WORK/tim-deacon-architect-website/web/node_modules/gatsby-plugin-sitemap/gatsby-ssr'),
+      plugin: require('D:/HUNGRY BEAR STUDIO/WORK/tim-deacon-architect-website/web/node_modules/gatsby-plugin-sitemap/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('D:/HUNGRYBEARSTUDIO/WORK/tim-deacon-architect-website/web/node_modules/gatsby-plugin-google-fonts/gatsby-ssr'),
+      plugin: require('D:/HUNGRY BEAR STUDIO/WORK/tim-deacon-architect-website/web/node_modules/gatsby-plugin-google-fonts/gatsby-ssr'),
       options: {"plugins":[],"fonts":["Comfortaa","Open Sans","source sans pro:300,400,400i,700"]},
     },{
-      plugin: require('D:/HUNGRYBEARSTUDIO/WORK/tim-deacon-architect-website/web/node_modules/gatsby-plugin-theme-ui/gatsby-ssr'),
+      plugin: require('D:/HUNGRY BEAR STUDIO/WORK/tim-deacon-architect-website/web/node_modules/gatsby-plugin-theme-ui/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('D:/HUNGRYBEARSTUDIO/WORK/tim-deacon-architect-website/web/node_modules/gatsby-source-sanity/gatsby-ssr'),
+      plugin: require('D:/HUNGRY BEAR STUDIO/WORK/tim-deacon-architect-website/web/node_modules/gatsby-source-sanity/gatsby-ssr'),
       options: {"plugins":[],"projectId":"vfkh3okp","dataset":"backend","watchMode":true},
     },{
-      plugin: require('D:/HUNGRYBEARSTUDIO/WORK/tim-deacon-architect-website/web/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      plugin: require('D:/HUNGRY BEAR STUDIO/WORK/tim-deacon-architect-website/web/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('D:/HUNGRYBEARSTUDIO/WORK/tim-deacon-architect-website/web/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
-      options: {"plugins":[],"name":"Tim Deacon Architect Chartered Architect","short_name":"Tim Deacon Architect","start_url":"/","background_color":"#000","theme_color":"#000","display":"standalone","icon":"src/assets/deacs-favicon.png"},
+      plugin: require('D:/HUNGRY BEAR STUDIO/WORK/tim-deacon-architect-website/web/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
+      options: {"plugins":[],"name":"Tim Deacon Architect Chartered Architect","short_name":"Tim Deacon Architect","start_url":"/","background_color":"#000","theme_color":"#000","display":"standalone","icon":"src/assets/T_Icon.png"},
     },{
-      plugin: require('D:/HUNGRYBEARSTUDIO/WORK/tim-deacon-architect-website/web/node_modules/gatsby-plugin-offline/gatsby-ssr'),
+      plugin: require('D:/HUNGRY BEAR STUDIO/WORK/tim-deacon-architect-website/web/node_modules/gatsby-plugin-offline/gatsby-ssr'),
       options: {"plugins":[]},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
