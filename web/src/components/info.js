@@ -5,7 +5,7 @@ import styled from "@emotion/styled";
 import { graphql, useStaticQuery } from "gatsby";
 import Img from "gatsby-image";
 import SEO from "gatsby-theme-seo/src/components/seo";
-
+import PortableText from "@sanity/block-content-to-react";
 const Container = styled.div`
   display: grid;
   grid-template-columns: 1fr;
@@ -34,7 +34,7 @@ const About = styled.div`
   margin: 1em 2em;
 
   @media (min-width: 48em) {
-    margin: 5em 2em;
+    margin: 2em 2em;
 
     & p {
       padding: 1em 0 0 0;
@@ -108,41 +108,21 @@ const RIBALogo = styled(Img)`
 const Info = () => {
   const homeInfo = useStaticQuery(query);
   const info = homeInfo.allSanityInfo.edges;
+  console.log(info);
   return (
     <Container>
       <SEO title="Tim Deacon Architect" />
       {info.map(({ node }) => (
         <>
           <About>
-            <p
+            <PortableText
               sx={{
                 fontFamily: "main",
-                fontSize: [2],
+                fontWeight: "body",
                 color: "text"
               }}
-            >
-              {node._rawAbout[1].children[0].text}
-            </p>
-            <br />
-            <p
-              sx={{
-                fontFamily: "main",
-                fontSize: [2],
-                color: "text"
-              }}
-            >
-              {node._rawAbout[2].children[0].text}
-            </p>
-            <br />
-            <p
-              sx={{
-                fontFamily: "main",
-                fontSize: [2],
-                color: "text"
-              }}
-            >
-              {node._rawAbout[3].children[0].text}
-            </p>
+              blocks={node._rawAbout}
+            />
           </About>
           <Contact>
             <a
