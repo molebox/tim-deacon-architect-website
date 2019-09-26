@@ -32,7 +32,6 @@ const Index = () => {
   const content = useStaticQuery(query);
   const image = content.allSanityContent.edges;
   const metadata = content.allSanityMetadata.edges;
-
   return (
     <Layout>
       {metadata.map(({node}) => (

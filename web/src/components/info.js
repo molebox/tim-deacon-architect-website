@@ -108,10 +108,16 @@ const RIBALogo = styled(Img)`
 const Info = () => {
   const homeInfo = useStaticQuery(query);
   const info = homeInfo.allSanityInfo.edges;
-  console.log(info);
+  const metadata = homeInfo.allSanityMetadata.edges;
   return (
     <Container>
-      <SEO title="Tim Deacon Architect | Shoreham-by-Sea | Brighton | Worthing | Sussex" />
+      {metadata.map(({node}) => (
+        <SEO
+        title="Tim Deacon Architect | Shoreham-by-Sea | Brighton | Worthing | Sussex"
+        description={node.description}
+        keywords={node.keywords}
+      />
+      ))}
       {info.map(({ node }) => (
         <>
           <About>
@@ -201,6 +207,14 @@ export const query = graphql`
               }
             }
           }
+        }
+      }
+    }
+    allSanityMetadata {
+      edges {
+        node {
+          keywords
+          description
         }
       }
     }

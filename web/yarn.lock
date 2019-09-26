@@ -5827,10 +5827,10 @@ gatsby-theme-overreacted-toggle@^1.0.2:
     react-switch "^5.0.1"
     theme-ui "^0.2.36"
 
-gatsby-theme-seo@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/gatsby-theme-seo/-/gatsby-theme-seo-0.0.1.tgz#271dc802a43d12ae9acd3251db8381b1be56743c"
-  integrity sha512-WdEJJUB7WgzFKb1crrR9lGXv8O7fEo8IgXKoBJhM4W0QmrWr+ZjJmMw7AfG6ia32GHz+5elYU2ocuFmo2F35Ew==
+gatsby-theme-seo@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/gatsby-theme-seo/-/gatsby-theme-seo-0.0.3.tgz#292de2c89522da9d6fd570de51dd8321c6ba93f9"
+  integrity sha512-kkdmbQheJHBm7753Rk409IU70PINsDi0P2y2nvMKd9VbQz45curfdiz2m5yhOgNqXGYLBQGN/Ee7Qa765OGz2Q==
   dependencies:
     gatsby "^2.15.16"
     gatsby-plugin-react-helmet "^3.1.7"

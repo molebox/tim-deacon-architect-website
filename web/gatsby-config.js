@@ -8,8 +8,8 @@ require("dotenv").config({
 module.exports = {
     siteMetadata: {
         title: 'Tim Deacon Architect',
-        description: `
-        Tim Deacon is a Chartered Architect based in Shoreham-by-Sea, West Sussex, and working in Sussex and the South-East of England. Experienced in residential architecture, recent projects include new build, domestic extensions, loft conversions, office to residential conversions and listed buildings.`,
+        // description: `
+        // Tim Deacon is a Chartered Architect based in Shoreham-by-Sea, West Sussex, and working in Sussex and the South-East of England. Experienced in residential architecture, recent projects include new build, domestic extensions, loft conversions, office to residential conversions and listed buildings.`,
         siteUrl: 'https://timdeaconarchitect.com',
       },
     plugins: [
@@ -46,8 +46,6 @@ module.exports = {
       {
         resolve: 'gatsby-theme-seo', 
         options: {
-            title: 'tim deacon architect',
-            description: 'Professional architectural services, tailored to suit your aspirations.',
             author: 'Tim Deacon',
             siteUrl: 'https://timdeaconarchitect.com',
             social: {
