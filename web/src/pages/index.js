@@ -27,18 +27,21 @@ const Image = styled(Img)`
   -moz-box-shadow: 4px 7px 16px -5px rgba(0, 0, 0, 0.75);
   box-shadow: 4px 7px 16px -5px rgba(0, 0, 0, 0.75);
 `;
-const keywords = ["architect", "chartered architect", "consultation"];
 
 const Index = () => {
   const content = useStaticQuery(query);
   const image = content.allSanityContent.edges;
+  const metadata = content.allSanityMetadata.edges;
+
   return (
     <Layout>
-      <SEO
-        title="Chartered Architect"
-        description="Professional architectural services, tailored to suit your aspirations."
-        keywords={keywords}
+      {metadata.map(({node}) => (
+        <SEO
+        title="Tim Deacon Architect | Shoreham-by-Sea | Brighton | Worthing | Sussex"
+        description={node.description}
+        keywords={node.keywords}
       />
+      ))}
       <Navbar />
       <Info />
       <Content>
@@ -66,6 +69,14 @@ export const query = graphql`
               }
             }
           }
+        }
+      }
+    }
+    allSanityMetadata {
+      edges {
+        node {
+          keywords
+          description
         }
       }
     }

@@ -111,7 +111,7 @@ const Info = () => {
   console.log(info);
   return (
     <Container>
-      <SEO title="Tim Deacon Architect" />
+      <SEO title="Tim Deacon Architect | Shoreham-by-Sea | Brighton | Worthing | Sussex" />
       {info.map(({ node }) => (
         <>
           <About>

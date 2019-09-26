@@ -8,12 +8,9 @@ require("dotenv").config({
 module.exports = {
     siteMetadata: {
         title: 'Tim Deacon Architect',
-        description: 'Tim Deacon Architect Chartered Architect',
-        siteUrl: 'https://www.test.com',
-        instagram: '',
-        keywords: [
-          'architect'
-        ],
+        description: `
+        Tim Deacon is a Chartered Architect based in Shoreham-by-Sea, West Sussex, and working in Sussex and the South-East of England. Experienced in residential architecture, recent projects include new build, domestic extensions, loft conversions, office to residential conversions and listed buildings.`,
+        siteUrl: 'https://timdeaconarchitect.com',
       },
     plugins: [
         `gatsby-plugin-emotion`,
@@ -40,7 +37,7 @@ module.exports = {
         options: {
           projectId: process.env.SANITY_PROJECT_ID,
           dataset: process.env.SANITY_PROJECT_DATASET,
-          watchMode: true
+          watchMode: false
           // a token with read permissions is required
           // if you have a private dataset
           // token: process.env.MY_SANITY_TOKEN
@@ -54,7 +51,7 @@ module.exports = {
             author: 'Tim Deacon',
             siteUrl: 'https://timdeaconarchitect.com',
             social: {
-                twitter: ''
+                twitter: 'studio_hungry'
             }
         }
     },

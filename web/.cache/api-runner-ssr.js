@@ -9,7 +9,7 @@ var plugins = [{
       options: {"plugins":[]},
     },{
       plugin: require('D:/HUNGRYBEARSTUDIO/WORK/tim-deacon-architect-website/web/node_modules/gatsby-source-sanity/gatsby-ssr'),
-      options: {"plugins":[],"projectId":"vfkh3okp","dataset":"backend","watchMode":true},
+      options: {"plugins":[],"projectId":"vfkh3okp","dataset":"backend","watchMode":false},
     },{
       plugin: require('D:/HUNGRYBEARSTUDIO/WORK/tim-deacon-architect-website/web/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
